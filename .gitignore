@@ -10,6 +10,7 @@ target/
 .idea/libraries/
 .idea/**.xml
 .idea/**.iml
+.idea/.gitignore
 *.iws
 *.iml
 *.ipr
