@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
 
-    @Test
+@Test
     void whenAdd_with5and6_thenExpect11() {
         //GIVEN
         int a = 5;
@@ -19,6 +19,7 @@ class MainTest {
         int actual = Main.add(a,b);
 
         //THEN
+        //prüfe auf Gleichheit(ich erwarte, das ist es tatsächlich)
         assertEquals(solution,actual);
     }
 

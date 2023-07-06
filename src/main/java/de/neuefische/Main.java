@@ -3,10 +3,72 @@ package de.neuefische;
 public class Main {
 
     public static void main(String[] args) {
-//        countTo100WithWhile();
-        countTo100WithFor();
-    }
 
+
+        //am häufigsten
+        int a = 2;
+        boolean c = true;
+        double d = 1.04;
+
+        //eher seltener
+        char b = 'd';
+        byte e = 123;
+        short f = 12345;
+        long g = 34646456456456L;
+        float h = 1.085f;
+
+        //komplexen "Datentyp"
+        String j = "Hallo"; //verkettung von char´s + liefert vorgefertigte Methoden, die man mit einem .x aufrufen kann
+
+        if (a < 2){
+            System.out.println("ist kleiner");
+        } else if (a ==2) {
+            System.out.println("ist genau zwei");
+        }else {
+            System.out.println("ist wohl größer!");
+        }
+
+        String[] coaches = new String[3]; // indexen : 0,1,2 -> lange schreibweise, Werte können aber auch später nachgereicht werden
+        coaches[1] = "Dominic";
+        coaches[0] = "Sara";
+        System.out.println(coaches[0]);
+        System.out.println(coaches[1]);
+        System.out.println(coaches[2]);
+
+        String[] coaches2 = {"Sara", "Dominic"}; //kurze Schreibweise, setzt aber voraus, das alle Werte bekannt sind.
+        System.out.println(coaches2[0]);
+
+        String someString = "HalloWelt";
+        System.out.println(someString.contains("Welt"));
+
+        switch (5) {
+            case 5:
+                System.out.println("Hallo");
+                break;
+            case 6:
+                System.out.println("Welt");
+                break;
+            case 7:
+                System.out.println("ups");
+                break;
+            default:
+                System.out.println("Nichts gefunden");
+        }
+
+                switch (5){
+                    case 5 -> System.out.println("Hallo");
+
+                    case 6 ->
+                        System.out.println("Welt");
+
+                    case 7 ->
+                        System.out.println("ups");
+
+                    default ->
+                        System.out.println("Nichts gefunden");
+        }
+    }
+// Sichtbarkeit statisch rückgabeTyp MethodenNamen (Übergabeparameter)
     public static int add (int a, int b){
         return a+b;
     }
@@ -38,6 +100,7 @@ public class Main {
     public static void countTo100WithWhile(){
         int count = 0;
         while (count < 100){
+            // count = count+1;
             count++;
             System.out.println(count);
         }
